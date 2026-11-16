@@ -84,8 +84,10 @@ def verify_lesson(lang,case_id,path,state):
                 fail(short+": traducao da tabela difere do dialogo no turno "+str(i+1))
             if lang=="japones" and fields.get("Romanização")!=row[2]:
                 fail(short+": Hepburn da tabela difere do dialogo no turno "+str(i+1))
-    for target in ("Fontes","PENDENTE"):
-        if target not in text: fail(short+": falta marcador "+target)
+    if "../FONTES.md" not in text:
+        fail(short+": faltou link para fontes gratuitas do idioma")
+    if "PENDENTE" not in text and state!="aprovado":
+        fail(short+": revisão não indicada como pendente")
     if not ("Modelo" in text or "Solução" in text or "solução" in text or "modelo" in text):
         fail(short+": falta resposta do exercicio")
     if "https://" not in text: fail(short+": falta URL da fonte gratuita")
