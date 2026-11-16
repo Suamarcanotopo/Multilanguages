@@ -155,6 +155,8 @@
 
 <!-- PANDORA:ROOT-INDEX:END -->
 
+**[Guia fonético inicial para brasileiros](DIDATICA/GUIA-DE-SONS.md)** · **[Princípios de pronúncia e seus limites](DIDATICA/PRONUNCIA-BR.md)**
+
 ## Aprenda na ordem útil
 1. **Entenda** a frase em português e quando usá-la.
 2. **Leia** o original e a pista de pronúncia para brasileiros.

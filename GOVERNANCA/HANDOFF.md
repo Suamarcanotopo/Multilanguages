@@ -1,50 +1,32 @@
-# HANDOFF — Pandora Survivor Teacher
-Atualizado: 2026-11-16. Release candidata: `0.2.0-rc.1`.
+# HANDOFF CANÔNICO — Pandora Survivor Teacher
+**Data:** 2026-11-16 · **Missão:** `GOVERNANCA/MISSION-LOCK.md` v0.2.0 · **Repositório:** `Suamarcanotopo/Multilanguages` · **PR:** [#1 em Draft](https://github.com/Suamarcanotopo/Multilanguages/pull/1).
 
-## Estado verdadeiro
-- Base auditada `main`: commit `29ccce4dde6eef331df4c47a7b3584185c64fe1d`, árvore `f29efbce8903bfdfe9780882b0ddda2cefe0313a`, contendo somente `README.md` de apresentação.
-- Branch de trabalho: `feat/pandora-survivor-teacher-foundation`. PR em Draft para revisão; **não representa integração na main**.
-- Escopo proposto nesta fundação: 4 trilhas, 30 situações no catálogo, 2 aulas demonstrativas por idioma, glossários iniciais, links gratuitos e regras de manutenção.
-- **Pendente:** 28 cenários em cada idioma; revisão por professor/nativo; gravações de áudio; acessibilidade revisada com usuários; testes reais de aprendizagem; auditoria humana dos portais de compra; validação operacional de todos os URLs periodicamente.
-- Não há alegação de instalação de skills externas, teste de eficácia com estudantes ou aprovação linguística nativa.
+## Estado da verdade, nunca presumir execução
+- **Main intacta:** referência de base original `29ccce4dde6eef331df4c47a7b3584185c64fe1d`. Esta entrega permanece em `feat/pandora-survivor-teacher-foundation` até aprovação e merge humano.
+- **Conteúdo gravado e confirmado por árvore Git:** **30 aulas japonesas + 30 inglesas + 30 alemãs + 30 francesas = 120 arquivos A0–A1**, IDs `PST-001` ... `PST-030`. Não existem as mesmas aulas repetidas em duas pastas dentro do mesmo idioma.
+- **Diálogos por aula:** quatro turnos preenchidos `A/B/A/B`, total mínimo de **480 falas**, com original no idioma, leitura segmentada para brasileiros, tradução pt-BR e Hepburn para japonês.
+- **Exercício resolvido:** cada aula inclui pequena missão, modelo de solução, avisos proporcionais e fontes institucionais gratuitas da língua.
+- **Roteiro/Painel:** `README.md` lista integralmente 120 posições e `idiomas/<slug>/INDEX.md` mostra 30 aulas naquele idioma. Gerados por `python3 scripts/build_indices.py --write`; conferir com `--check`.
+- **Evidências técnicas:** GitHub Actions [run 43964373305 — SUCCESS](https://github.com/Suamarcanotopo/Multilanguages/actions/runs/43964373305) no commit `771681a75b1a085b548a1023a59b510382d9964c`. Nesse run, índice, validador estrutural, testes unitários e isolamento de paths passaram.
+- **Gates pendentes (não declarar PASS):** revisão humana/nativa **0/120 documentadas**; comparação de cada uma das 480 falas com áudio específico; AFI/IPA sistemático; testes com alunos; eficácia de comunicação em situação real; todos os links rechecados recentemente.
 
-## Como continuar em nova IA
-1. Ler `AGENTS.md` e `GOVERNANCA/MISSION-LOCK.md`.
-2. Consultar `catalogo/casos.json`, escolher caso ainda planejado e `idiomas/<slug>/INDEX.md`.
-3. Acrescentar **somente** `idiomas/<slug>/aulas/PST-XXX.md` e atualizar o respectivo `INDEX.md` e `catalogo/casos.json` conforme política de status (catálogo registra status comum dos exemplos iniciais, depois migrar para progresso por idioma).
-4. Conferir fonética com áudio de fonte nativa; registrar revisor, data, variante, evidência; se sem revisão, usar rascunho.
-5. Rodar `python3 scripts/validate_catalog.py`. Registrar resultado em PR.
-6. Coliseum: contesta plausibilidade, informações perigosas, direitos, links falsos, duplicação, traduções literais e falsa segurança.
-7. Solicitar revisão e aprovar antes do merge. Rollback: reverter PR/commit, nunca apagar histórico.
+## Origem de erro e prevenção permanente
+**Falha anterior:** aula da caneta (PST-002 japonês e outras línguas) continha turnos da pessoa B como instruções entre colchetes. A partir da missão v0.2, nenhum roteiro ou resposta pode depender de o aluno criar a frase inexistente.
 
-## Próxima melhoria do esquema
-Mover estado de cada `idioma + case_id` para `catalogo/progresso.json` para acompanhar diferença de maturidade entre idiomas, em vez de um estado compartilhado da pauta. A fundação não deve confundir status da pauta com status de tradução revisada.
+**Proteção:** `scripts/validate_catalog.py` rejeita fala vazia, resposta sem som/tradução, conversas com menos de quatro turnos, mismatch entre frase do diálogo e tabela, falta de Hepburn japonês, placeholder e índice desatualizado. Diferenças gramaticais e fonéticas ainda precisam de revisão qualificada.
 
-## Manutenção
-- Renovar verificação dos links em intervalos definidos, especialmente cursos, número de emergência, compras e recursos regionais.
-- Adotar avaliações por pré-teste / pós-teste e repetição espaçada quando houver dados consentidos; coleta para menores exige projeto específico de privacidade.
-- Evitar expansão horizontal de 120 aulas incompletas antes de homologar os primeiros cenários de maior risco e utilidade.
+## Onde fica cada arquivo e como continuar
+- `catalogo/casos.json`: pauta única de 30 temas, **não é contagem de conteúdos aprovados**.
+- `idiomas/japones/aulas/PST-XXX.md`, `idiomas/ingles/aulas/PST-XXX.md`, `idiomas/alemao/aulas/PST-XXX.md`, `idiomas/frances/aulas/PST-XXX.md`: conteúdo canônico, sem intercâmbio de idiomas.
+- `idiomas/<slug>/INDEX.md`: índice calculado pelas aulas reais, não por promessas.
+- `idiomas/<slug>/GLOSSARIO.md`, `FONTES.md`, `COMPRAS-ONLINE.md`, `ANALOGIAS.md`: suportes por idioma, não duplicações.
+- `catalogo/fontes.json` e `catalogo/evidencias.json`: fontes institucionais e vínculos de evidência, não atestados de tradução frase-a-frase.
+- `DIDATICA/PRONUNCIA-BR.md`: política de aproximação; `DIDATICA/GUIA-DE-SONS.md`: como brasileiros devem ler as pistas e suas limitações.
 
-## Complemento: provas por aula (2026-11-16)
-- `catalogo/evidencias.json` separa material que demonstra uma **estrutura ou tema** de evidência de **frase literal**. Todos os 8 pares idioma/caso têm ao menos uma fonte adicional de estudo, e **nenhuma** prova revisão da frase exata inteira.
-- Os links específicos estão na seção 8 de cada aula. Revisor futuro deve promover um vínculo por frase somente se encontrar e registrar transcrição/áudio correspondente.
-- CI estrutural deve checar evidências além dos IDs e da árvore do projeto. PR #1 continua em Draft.
+**Passos para próxima IA/LLM:** (1) ler Mission Lock + AGENTS + este Handoff; (2) escolher **um idioma e uma aula**; (3) verificar falas, formalidade, escrita, pronúncia e fontes com especialista e áudio; (4) atualizar só o arquivo da aula e registros de evidência verificáveis; (5) executar `python3 scripts/build_indices.py --write` e `python3 scripts/validate_catalog.py` e testes; (6) submeter PR específica `feat/idioma-<slug>-...` sem tocar em outro idioma; (7) informar com contagem de arquivos, status, gaps, hash e URL de PR.
 
-## Onda 2 — indexação completa, analogias e proteção (2026-11-16)
-- PR #1: 4 x 30 linhas independentes no README raiz + `idiomas/<slug>/INDEX.md` em cada trilha; `idiomas/<slug>/README.md` facilita navegar no diretório pelo GitHub.
-- Catálogo `catalogo/casos.json` passou a manter apenas assuntos, IDs e prioridades; cada arquivo de aula é a fonte única de sua situação. Não atualizar estado global de conteúdo.
-- Script `scripts/build_indices.py --write` gera índices; `--check` e `scripts/validate_catalog.py` fiscalizam links, status e isolamento. `tests/test_indices.py` testa nova aula apenas em um idioma; `scripts/check_scope.py` protege branches com slug explícito.
-- Foram criados `idiomas/<slug>/ANALOGIAS.md` com exemplos didáticos **não atribuídos** a obras e com orientações de pronúncia provisórias; 12 analogias na fundação.
-- Continuar: escolher um único `<slug>`, criar `aulas/PST-XXX.md`, registrar `**Status:**`, conferir fontes e áudio, executar gerador e testes, abrir PR Draft; não misturar com outras línguas.
-- 8 aulas iniciais continuam rascunhos sem homologação nativa. Não confundir índice preenchido com 120 aulas produzidas.
+## Evidência ≠ conclusão
+As 120 aulas são **rascunhos preenchidos**, não certificações ou cursos homologados. As pistas pt-BR não são a notação internacional AFI e podem estar imprecisas. As fontes institucionais permitem escuta e estudo, mas suas páginas iniciais não provam cada frase do conteúdo. **Jamais alterar `rascunho-exemplo` para `aprovado` sem revisor, variante, data e prova direta**.
 
-## Missão atualizada — aulas completas, fonética e prática A0/A1 (2026-11-16)
-**Origem da correção:** exemplo real de PST-002 japonês continha resposta B em colchetes em vez de material de aula. Ao replicar isso nas trilhas, o leitor não consegue falar. A instrução do proprietário amplia o escopo para 30 cenários por idioma.
-- **Prioridade 1:** travar no Mission Lock a proibição de placeholders e exigir pronúncia brasileira em TODAS as falas, inclusive respostas. Handoff não autoriza descumprimento.
-- **Prioridade 2:** preencher PST-001..PST-030 em japonês, inglês, alemão e francês. Cada cenário inicia no nível A0–A1, autossuficiente, com diálogos naturais e vocabulário próximo do cotidiano de adaptação ao país.
-- **Prioridade 3:** regenerar `README.md` e 4 índices, rodar validator e testes; registrar commit/PR/resultado. Não promover status para `aprovado` sem revisor.
-- **Pronúncia:** indicar primeiro idioma original, depois Hepburn no japonês, pista segmentada em pt-BR, explicação de sons difíceis e fontes de áudio gratuitas. Pistas não são IPA nem áudio validado. Evitar fingir exatidão.
-- **Status no índice:** `rascunho-exemplo` significa aula escrita completa com revisão nativa pendente; nunca usar o estado para designar apenas pauta/estrutura.
-- **Modo de continuidade de qualquer IA:** leia Mission Lock, fontes, índice, arquivos de aula e execute os testes antes de afirmar conclusão. Caso falte conteúdo: fornecer contagem REAL por idioma e IDs pendentes. Nunca editar fora do escopo permitido.
-- **Dívida prévia:** PST-002 e PST-006 tinham mini-diálogos com respostas faltantes; reescrever, não apenas adicionar comentários.
-- **Verificação pedagógica pendente:** leitura por falante competente, áudio nativo comparado frase a frase, testes com público 14–24, acessibilidade; não declarar nenhuma dessas como concluída sem evidência observável.
+## Proteção de downside e rollback
+A biblioteca continua gratuita e aproveitável como corpus de tradução, roteiro para vídeos e material de ensino, mesmo se uma oferta comercial não for criada. Em erro grave, bloquear promoção, reverter o commit/PR no GitHub, preservar logs e reaplicar a última versão verificada. `main` não deve ser alterada automaticamente.

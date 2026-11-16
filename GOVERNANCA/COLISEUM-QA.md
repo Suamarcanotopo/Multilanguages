@@ -1,25 +1,30 @@
-# Coliseum — Revisão adversarial da fundação
-Objeto: proposta de currículo inicial em 4 idiomas.
-## Matriz
-| Arena | Teste | Resultado inicial |
-|---|---|---|
-| Escopo | 4 idiomas e 30 casos com IDs únicos | checagem estrutural automatizável |
-| Verdade | Status de aula rascunho separado de aprovada | previsto |
-| Segurança | emergência, menores e saúde com limites | previsto |
-| Pronúncia | pistas pt-BR + áudio oficial; nativo revisou? | **RETEST: não revisado** |
-| Fontes | recursos gratuitos institucionais conferidos | **ACCEPT para catalogação, não para cada frase** |
-| Direitos | links e resumos próprios; sem copiar materiais | previsto |
-| Disponibilidade | acesso real a todos os vídeos e portais em diferentes países | **RETEST: variável** |
-| Eficácia | aluno compreende e consegue se comunicar? | **RETEST: teste com usuários não realizado** |
-| CI | verificador de estrutura | depende de execução |
-| Merge | aprovação humana do PR | pendente |
-## Ataques de revisão
-- Japonês sem kana/kanji ou marca de vogal longa → bloquear.
-- Alemão tratado sempre por `du` com desconhecidos → bloquear.
-- Francês com nasalidade ignorada → bloquear homologação.
-- Inglês `lend` vs `borrow` confundidos → bloquear.
-- Links de compras tratados como recomendação de segurança → bloquear.
-- Mesmo `case_id` repetido dentro do mesmo idioma → bloquear.
-- Fonte geral usada como 'prova' de frase sem correspondência real → marcar evidência insuficiente.
+# Coliseum — Aulas iniciais 120 × quatro turnos
 
-**Veredito projetado:** `RETEST` antes de promoção para curso homologado. A fundação é candidata e pode entrar como rascunho informativo após testes, não como curso certificado.
+## Resumo da auditoria executada (16/11/2026)
+**Escopo técnico comprovado:** árvore Git contém 30 arquivos por idioma; README e quatro índices incluem conteúdos correspondentes; CI GitHub Actions run `43964373305` concluiu com **success** para validação do corpus após corrigir as verificações antigas.
+
+## Arenas e veredictos
+| Arena | Evidência | Veredito |
+|---|---|---|
+| Integridade de arquivos | 120 aulas distribuídas 30/idioma | ACCEPT (estrutura) |
+| Diálogos A/B/A/B | 480 turnos com original, som brasileiro e tradução | ACCEPT (estrutura) |
+| Ausência de placeholders | validador bloqueia respostas em colchetes, TODO e reticências vazias | ACCEPT (gate) |
+| Pronúncia por brasileiro | pistas segmentadas nos turnos; sons sem equivalente explícitos no guia | ACCEPT como auxílio inicial, **RETEST precisão** |
+| Romanização japonesa | Hepburn presente nos turnos japoneses | ACCEPT presença, **RETEST fidelidade** |
+| Qualidade da tradução e naturalidade | 120 rascunhos sem parecer nativo registrado | RETEST |
+| Fonte oficial por frase | links institucionais de estudo; correspondência literal não comprovada | RETEST |
+| Acessibilidade real | não testada com alunos | RETEST |
+| Segurança | avisos para farmácia, hospital, alergia, polícia, dinheiro, sites | RETEST especialistas |
+| Publicação em main | PR #1 Draft | BLOQUEADA para merge automático |
+
+## Gaps observados e consertados
+1. PST-002 trazia respostas B não produzidas: todos os turnos foram reescritos.
+2. Validador inicial se guiava pelo título literal de seção 'Fontes gratuitas', reprovando inglês/francês apesar de haver links. Substituído por regra sobre **URL/arquivo de fonte existente** e conferência de turnos; run final aprovado.
+3. Os índices só exibiam 2/30: passaram a mostrar 30/30 em cada idioma, mantendo status *Rascunho*.
+4. O Handoff antigo descrevia '28 pendentes por idioma' e foi substituído por estado atual explícito.
+
+## Limites de confiança
+Nenhum ECP/Coliseum autônomo foi executado em host separado; a revisão seguiu seus **contratos documentados**. CI prova invariantes estruturais e não pode certificar que uma pista escrita reproduz o som real. Revisão linguística especializada é bloqueador para status *aprovado*.
+
+## Próximo gate independente
+Professor/falante competente verifica amostra do conteúdo, prioriza aulas críticas (PST-005, 006, 022, 024), compara cada frase com material de áudio, corrige incorreções e registra fonte/revisão. Só depois libera aprovação por idioma e cenário.
