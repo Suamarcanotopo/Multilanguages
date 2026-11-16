@@ -14,7 +14,6 @@ langs=load("catalogo/idiomas.json")["idiomas"]
 sources=load("catalogo/fontes.json")["fontes"]
 stores=load("catalogo/lojas.json")["lojas"]
 evidence=load("catalogo/evidencias.json")["entries"]
-unique([e["id"] for e in evidence],"evidence")
 assert len(evidence)>=8, "Faltam evidências por aula"
 for e in evidence:
     if e["case_id"] not in {"PST-002","PST-006"} or e["idioma"] not in {l["slug"] for l in langs}:
@@ -36,6 +35,7 @@ unique([l["slug"] for l in langs],"languages")
 unique([s["id"] for s in sources],"sources")
 unique([s["url"] for s in sources],"source URLs")
 unique([s["id"] for s in stores],"shop IDs")
+unique([e["id"] for e in evidence],"evidence")
 assert len(langs)==4, "A fundação requer quatro idiomas"
 assert len(cases)>=30, "A fundação requer 30 cenários"
 expected={"PST-002","PST-006"}
