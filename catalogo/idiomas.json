@@ -6,29 +6,26 @@
       "slug": "ingles",
       "codigo": "en",
       "nome": "Inglês",
-      "variante": "Inglês americano introdutório; variantes britânicas identificadas quando relevantes",
-      "status": "2 aulas demonstrativas por idioma; revisão de pronúncia pendente"
+      "variante": "Inglês americano introdutório; variantes britânicas identificadas quando relevantes"
     },
     {
       "slug": "alemao",
       "codigo": "de",
       "nome": "Alemão",
-      "variante": "Alemão padrão na Alemanha; du informal e Sie formal",
-      "status": "2 aulas demonstrativas por idioma; revisão de pronúncia pendente"
+      "variante": "Alemão padrão na Alemanha; du informal e Sie formal"
     },
     {
       "slug": "frances",
       "codigo": "fr",
       "nome": "Francês",
-      "variante": "Francês padrão da França; vous para desconhecidos e tu com amigos",
-      "status": "2 aulas demonstrativas por idioma; revisão de pronúncia pendente"
+      "variante": "Francês padrão da França; vous para desconhecidos e tu com amigos"
     },
     {
       "slug": "japones",
       "codigo": "ja",
       "nome": "Japonês",
-      "variante": "Japonês padrão; escrito em kana/kanji e romaji Hepburn",
-      "status": "2 aulas demonstrativas por idioma; revisão de pronúncia pendente"
+      "variante": "Japonês padrão; escrito em kana/kanji e romaji Hepburn"
     }
-  ]
+  ],
+  "politica": "Cada idioma é independente; status não é compartilhado. O índice deve ser gerado a partir dos arquivos da própria trilha."
 }
