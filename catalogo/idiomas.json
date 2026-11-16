@@ -1,0 +1,31 @@
+{
+  "base": "português brasileiro",
+  "publico": "14 a 24 anos; acessível a iniciantes de qualquer idade",
+  "idiomas": [
+    {
+      "slug": "ingles",
+      "codigo": "en",
+      "nome": "Inglês",
+      "variante": "Inglês americano introdutório; variantes britânicas identificadas quando relevantes"
+    },
+    {
+      "slug": "alemao",
+      "codigo": "de",
+      "nome": "Alemão",
+      "variante": "Alemão padrão na Alemanha; du informal e Sie formal"
+    },
+    {
+      "slug": "frances",
+      "codigo": "fr",
+      "nome": "Francês",
+      "variante": "Francês padrão da França; vous para desconhecidos e tu com amigos"
+    },
+    {
+      "slug": "japones",
+      "codigo": "ja",
+      "nome": "Japonês",
+      "variante": "Japonês padrão; escrito em kana/kanji e romaji Hepburn"
+    }
+  ],
+  "politica": "Cada idioma é independente; status não é compartilhado. O índice deve ser gerado a partir dos arquivos da própria trilha."
+}

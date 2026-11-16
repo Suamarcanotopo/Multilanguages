@@ -1,0 +1,158 @@
+{
+  "projeto": "Pandora Survivor Teacher",
+  "versao": "0.1.0-rc.3",
+  "atualizado_em": "2026-11-16",
+  "politica": "O catálogo registra TEMAS, não o progresso de cada idioma. Estado vem apenas do arquivo idioma/aulas/PST-XXX.md.",
+  "casos": [
+    {
+      "id": "PST-001",
+      "titulo": "Saudações e apresentações",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-002",
+      "titulo": "Caneta, empréstimos e papelaria",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-003",
+      "titulo": "Orientação nas ruas e transporte",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-004",
+      "titulo": "Mercado, preços e pagamento",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-005",
+      "titulo": "Farmácia, sintomas e remédios",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-006",
+      "titulo": "Hospital e emergências",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-007",
+      "titulo": "Escola, estudos e colegas",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-008",
+      "titulo": "Aeroporto, ônibus, trem e viagens",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-009",
+      "titulo": "Turismo, museus e passeios",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-010",
+      "titulo": "Perguntas cotidianas",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-011",
+      "titulo": "Família e parentesco",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-012",
+      "titulo": "Amizade, convites e convivência",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-013",
+      "titulo": "Relacionamentos, privacidade e consentimento",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-014",
+      "titulo": "Compras online e prevenção a golpes",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-015",
+      "titulo": "Trabalho, profissões e entrevistas",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-016",
+      "titulo": "Adjetivos, sentimentos e descrições",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-017",
+      "titulo": "Idade, números, horas e datas",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-018",
+      "titulo": "Cores, objetos e roupas",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-019",
+      "titulo": "Veículos e mobilidade",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-020",
+      "titulo": "Animais, plantas e natureza",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-021",
+      "titulo": "Música, cinema, séries e lazer",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-022",
+      "titulo": "Restaurante, restrições e alergias",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-023",
+      "titulo": "Moradia, aluguel e hospedagem",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-024",
+      "titulo": "Documentos, polícia e consulado",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-025",
+      "titulo": "Dinheiro, banco e orçamento",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-026",
+      "titulo": "Internet, telefonia e localização",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-027",
+      "titulo": "Acessibilidade e pedir adaptações",
+      "prioridade": "essencial"
+    },
+    {
+      "id": "PST-028",
+      "titulo": "Etiqueta, formalidade e cultura",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-029",
+      "titulo": "Clima, estação e previsão",
+      "prioridade": "cotidiano"
+    },
+    {
+      "id": "PST-030",
+      "titulo": "Reclamações, troca e devolução",
+      "prioridade": "cotidiano"
+    }
+  ]
+}
