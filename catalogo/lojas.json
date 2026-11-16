@@ -1,0 +1,113 @@
+{
+  "politica": "Somente exemplos de portais por país; sem endosso, afiliado ou garantia de disponibilidade. Verifique reputação, regras e segurança antes de comprar.",
+  "lojas": [
+    {
+      "id": "SHOP-EN-01",
+      "idioma": "ingles",
+      "titulo": "Amazon Estados Unidos",
+      "url": "https://www.amazon.com/",
+      "alerta": "Marketplace e comércio eletrônico; confirme vendedor, impostos, prazo e política de devolução.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-EN-02",
+      "idioma": "ingles",
+      "titulo": "Walmart",
+      "url": "https://www.walmart.com/",
+      "alerta": "Varejo e supermercado; escolha entrega ou retirada somente após conferir a região.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-EN-03",
+      "idioma": "ingles",
+      "titulo": "Amazon Reino Unido",
+      "url": "https://www.amazon.co.uk/",
+      "alerta": "Marketplace em libras esterlinas; confira frete e moedas.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-DE-01",
+      "idioma": "alemao",
+      "titulo": "Amazon Alemanha",
+      "url": "https://www.amazon.de/",
+      "alerta": "Loja online; confira país de entrega, endereço, vendedor e devolução.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-DE-02",
+      "idioma": "alemao",
+      "titulo": "OTTO",
+      "url": "https://www.otto.de/",
+      "alerta": "Varejo alemão; confira taxas de entrega e dados da empresa.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-DE-03",
+      "idioma": "alemao",
+      "titulo": "idealo",
+      "url": "https://www.idealo.de/",
+      "alerta": "Comparador de preços; compare também frete e confiabilidade dos lojistas.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-FR-01",
+      "idioma": "frances",
+      "titulo": "Fnac",
+      "url": "https://www.fnac.com/",
+      "alerta": "Livros, eletrônicos e cultura; confira vendedor e devolução.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-FR-02",
+      "idioma": "frances",
+      "titulo": "Cdiscount",
+      "url": "https://www.cdiscount.com/",
+      "alerta": "Marketplace; analise vendedor e taxas antes de pagar.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-FR-03",
+      "idioma": "frances",
+      "titulo": "Amazon França",
+      "url": "https://www.amazon.fr/",
+      "alerta": "Loja online em euros; verifique entrega e condições da oferta.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-JA-01",
+      "idioma": "japones",
+      "titulo": "Amazon Japão",
+      "url": "https://www.amazon.co.jp/",
+      "alerta": "Loja japonesa; confira endereço no Japão, idioma, entrega e taxas.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-JA-02",
+      "idioma": "japones",
+      "titulo": "Rakuten Ichiba",
+      "url": "https://www.rakuten.co.jp/",
+      "alerta": "Marketplace japonês com diversas lojas; revise reputação e condições.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    },
+    {
+      "id": "SHOP-JA-03",
+      "idioma": "japones",
+      "titulo": "Mercari Japão",
+      "url": "https://jp.mercari.com/",
+      "alerta": "Plataforma de compra/venda entre pessoas; confirme segurança e regras da conta.",
+      "status": "referencia-comercial-nao-endosso",
+      "verificacao": "dominio-de-referencia-consultar-condicoes-atualizadas"
+    }
+  ]
+}
