@@ -1,14 +1,26 @@
-name: Pandora — validar índices e unicidade
+name: Pandora — índices e isolamento
 on:
   pull_request:
   push:
     branches: [main]
+permissions:
+  contents: read
 jobs:
   catalog:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
       - uses: actions/checkout@v4
-      - name: Python validation (offline)
+        with:
+          fetch-depth: 0
+      - name: Conferir indices gerados
+        run: python3 scripts/build_indices.py --check
+      - name: Validar integridade e fontes
         run: python3 scripts/validate_catalog.py
+      - name: Testar independencia entre idiomas
+        run: python3 -m unittest discover -s tests -v
+      - name: Bloquear alteracoes cruzadas
+        if: github.event_name == 'pull_request'
+        env:
+          HEAD_BRANCH: ${{ github.head_ref }}
+          BASE_BRANCH: ${{ github.base_ref }}
+        run: python3 scripts/check_scope.py --branch "$HEAD_BRANCH" --base "$BASE_BRANCH"
