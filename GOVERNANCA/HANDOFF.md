@@ -29,3 +29,11 @@ Mover estado de cada `idioma + case_id` para `catalogo/progresso.json` para acom
 - `catalogo/evidencias.json` separa material que demonstra uma **estrutura ou tema** de evidência de **frase literal**. Todos os 8 pares idioma/caso têm ao menos uma fonte adicional de estudo, e **nenhuma** prova revisão da frase exata inteira.
 - Os links específicos estão na seção 8 de cada aula. Revisor futuro deve promover um vínculo por frase somente se encontrar e registrar transcrição/áudio correspondente.
 - CI estrutural deve checar evidências além dos IDs e da árvore do projeto. PR #1 continua em Draft.
+
+## Onda 2 — indexação completa, analogias e proteção (2026-11-16)
+- PR #1: 4 x 30 linhas independentes no README raiz + `idiomas/<slug>/INDEX.md` em cada trilha; `idiomas/<slug>/README.md` facilita navegar no diretório pelo GitHub.
+- Catálogo `catalogo/casos.json` passou a manter apenas assuntos, IDs e prioridades; cada arquivo de aula é a fonte única de sua situação. Não atualizar estado global de conteúdo.
+- Script `scripts/build_indices.py --write` gera índices; `--check` e `scripts/validate_catalog.py` fiscalizam links, status e isolamento. `tests/test_indices.py` testa nova aula apenas em um idioma; `scripts/check_scope.py` protege branches com slug explícito.
+- Foram criados `idiomas/<slug>/ANALOGIAS.md` com exemplos didáticos **não atribuídos** a obras e com orientações de pronúncia provisórias; 12 analogias na fundação.
+- Continuar: escolher um único `<slug>`, criar `aulas/PST-XXX.md`, registrar `**Status:**`, conferir fontes e áudio, executar gerador e testes, abrir PR Draft; não misturar com outras línguas.
+- 8 aulas iniciais continuam rascunhos sem homologação nativa. Não confundir índice preenchido com 120 aulas produzidas.

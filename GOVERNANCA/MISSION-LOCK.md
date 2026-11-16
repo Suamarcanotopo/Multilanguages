@@ -35,3 +35,11 @@ Site/App, síntese ou gravação de áudio, certificação CEFR/JF, tradução d
 
 ## Mudanças
 Novo pedido que colida com a missão: registrar delta, risco, opção de rollback e aprovação explícita. Não substituir esta constituição silenciosamente.
+
+## Emenda autoral — índices completos e isolamento (2026-11-16)
+- **README raiz:** quatro blocos independentes de 30 assuntos cada; índice do idioma contém seus próprios links, estado e referências. Um único repositório; nenhuma obrigatoriedade de criar repositórios separados por idioma.
+- **Não compartilhar progresso:** `catalogo/casos.json` é somente índice de temas; `idiomas/<slug>/aulas/PST-XXX.md` determina estado daquele idioma. Proibir a mesma aula em duas localizações dentro do idioma.
+- **Atualização automática controlada:** gerador `scripts/build_indices.py --write` e verificador `--check`, testes e CI. Índices são arquivos derivados, não manuais. Nenhuma PR pode permanecer com índice defasado.
+- **Isolamento forte:** branches `feat/idioma-<slug>-...` não podem editar conteúdo de outros idiomas. Alteração de esquema global é decisão separada do Owner.
+- **Analogias curtas:** referências culturais a cinco obras, sempre exemplos originais com tradução para pt-BR e pistas de som. Nada de diálogos, imagens ou trechos extensos protegidos; preservar segurança, atribuição e ausência de endosso.
+- **Evidência:** CI, testes e links não equivalem à aprovação por professores ou falantes nativos. Manter status de rascunho até revisão.

@@ -1,7 +1,7 @@
 # 🌍 Pandora Survivor Teacher — Multilanguages
 > **Aprenda a se virar sozinho em outro idioma.** Para brasileiros iniciantes, com frases prontas, pronúncia aproximada, contexto cultural, exercícios e links gratuitos verificáveis.
 
-**Status:** fundação **0.1.0-rc.3 (proposta)**; 4 idiomas, 30 cenários registrados, **2 aulas demonstrativas por idioma** (8 no total). **As demais 112 combinações de idioma × cenário continuam planejadas.** Não confundir catálogo com curso completo.
+**Status:** fundação **0.1.0-rc.3 (proposta)**; quatro trilhas independentes e 30 temas de sobrevivência por idioma. A quantidade real de aulas é calculada e exibida nos índices abaixo; rascunhos não são aulas homologadas.
 
 <!-- PANDORA:ROOT-INDEX:START -->
 ## Índice completo por idioma
