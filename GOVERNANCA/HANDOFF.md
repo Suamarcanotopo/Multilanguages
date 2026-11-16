@@ -1,5 +1,5 @@
 # HANDOFF — Pandora Survivor Teacher
-Atualizado: 2026-11-16. Release proposta: `0.1.0-rc.1`.
+Atualizado: 2026-11-16. Release candidata: `0.2.0-rc.1`.
 
 ## Estado verdadeiro
 - Base auditada `main`: commit `29ccce4dde6eef331df4c47a7b3584185c64fe1d`, árvore `f29efbce8903bfdfe9780882b0ddda2cefe0313a`, contendo somente `README.md` de apresentação.
@@ -37,3 +37,14 @@ Mover estado de cada `idioma + case_id` para `catalogo/progresso.json` para acom
 - Foram criados `idiomas/<slug>/ANALOGIAS.md` com exemplos didáticos **não atribuídos** a obras e com orientações de pronúncia provisórias; 12 analogias na fundação.
 - Continuar: escolher um único `<slug>`, criar `aulas/PST-XXX.md`, registrar `**Status:**`, conferir fontes e áudio, executar gerador e testes, abrir PR Draft; não misturar com outras línguas.
 - 8 aulas iniciais continuam rascunhos sem homologação nativa. Não confundir índice preenchido com 120 aulas produzidas.
+
+## Missão atualizada — aulas completas, fonética e prática A0/A1 (2026-11-16)
+**Origem da correção:** exemplo real de PST-002 japonês continha resposta B em colchetes em vez de material de aula. Ao replicar isso nas trilhas, o leitor não consegue falar. A instrução do proprietário amplia o escopo para 30 cenários por idioma.
+- **Prioridade 1:** travar no Mission Lock a proibição de placeholders e exigir pronúncia brasileira em TODAS as falas, inclusive respostas. Handoff não autoriza descumprimento.
+- **Prioridade 2:** preencher PST-001..PST-030 em japonês, inglês, alemão e francês. Cada cenário inicia no nível A0–A1, autossuficiente, com diálogos naturais e vocabulário próximo do cotidiano de adaptação ao país.
+- **Prioridade 3:** regenerar `README.md` e 4 índices, rodar validator e testes; registrar commit/PR/resultado. Não promover status para `aprovado` sem revisor.
+- **Pronúncia:** indicar primeiro idioma original, depois Hepburn no japonês, pista segmentada em pt-BR, explicação de sons difíceis e fontes de áudio gratuitas. Pistas não são IPA nem áudio validado. Evitar fingir exatidão.
+- **Status no índice:** `rascunho-exemplo` significa aula escrita completa com revisão nativa pendente; nunca usar o estado para designar apenas pauta/estrutura.
+- **Modo de continuidade de qualquer IA:** leia Mission Lock, fontes, índice, arquivos de aula e execute os testes antes de afirmar conclusão. Caso falte conteúdo: fornecer contagem REAL por idioma e IDs pendentes. Nunca editar fora do escopo permitido.
+- **Dívida prévia:** PST-002 e PST-006 tinham mini-diálogos com respostas faltantes; reescrever, não apenas adicionar comentários.
+- **Verificação pedagógica pendente:** leitura por falante competente, áudio nativo comparado frase a frase, testes com público 14–24, acessibilidade; não declarar nenhuma dessas como concluída sem evidência observável.

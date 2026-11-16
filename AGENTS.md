@@ -18,3 +18,10 @@
 15. Após incluir ou revisar uma aula, executar `python3 scripts/build_indices.py --write`; o script altera só `README.md` e os quatro `INDEX.md` gerados quando estiverem desatualizados. Depois executar `python3 scripts/validate_catalog.py` e testes.
 16. É proibido incluir link para aula de outro idioma dentro de `idiomas/<slug>/`. Nas branches `feat/idioma-<slug>-...` o CI rejeita alterações em diretórios de outros idiomas.
 17. Analogias com Naruto, Dragon Ball, Harry Potter, The Walking Dead e O Senhor dos Anéis são **exercícios originais**, não falas/cenas reais, com pronúncia aproximada ainda não homologada.
+
+## Emenda curricular 0.2.0 — regra fail-closed para aulas
+18. Cada tópico cadastrado vira **aula A0–A1 completa**, e não só lista de expressões. Quatro turnos devem estar preenchidos, duas trocas cotidianas A/B; todos os turnos têm pronúncia segmentada para brasileiros e tradução pt-BR, japonês também Hepburn.
+19. Rejeitar `[Responda ...]`, `[Explique ...]`, `...`, `TODO` ou qualquer texto substituto de um turno. Nunca delegar ao aluno a criação da fala ausente; exercícios próprios vêm depois de mostrar o modelo.
+20. Frase escrita pelo modelo é **rascunho para revisão**, não citação oficial. Confirmação literal requer fonte por frase e/ou profissional competente. Teste estrutural não prova pronúncia ou gramática perfeitas.
+21. Novas aulas precisam ser úteis para iniciantes na vida real, com vocabulário e resolução; não criar frases de nível intermediário apenas para preencher o catálogo.
+22. Se o usuário pedir 'preencha tudo', trabalhar nos 30 cenários dos 4 idiomas e informar claramente a contagem real concluída, sem confundir fontes com cursos completos.
