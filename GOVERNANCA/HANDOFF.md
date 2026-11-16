@@ -24,3 +24,8 @@ Mover estado de cada `idioma + case_id` para `catalogo/progresso.json` para acom
 - Renovar verificação dos links em intervalos definidos, especialmente cursos, número de emergência, compras e recursos regionais.
 - Adotar avaliações por pré-teste / pós-teste e repetição espaçada quando houver dados consentidos; coleta para menores exige projeto específico de privacidade.
 - Evitar expansão horizontal de 120 aulas incompletas antes de homologar os primeiros cenários de maior risco e utilidade.
+
+## Complemento: provas por aula (2026-11-16)
+- `catalogo/evidencias.json` separa material que demonstra uma **estrutura ou tema** de evidência de **frase literal**. Todos os 8 pares idioma/caso têm ao menos uma fonte adicional de estudo, e **nenhuma** prova revisão da frase exata inteira.
+- Os links específicos estão na seção 8 de cada aula. Revisor futuro deve promover um vínculo por frase somente se encontrar e registrar transcrição/áudio correspondente.
+- CI estrutural deve checar evidências além dos IDs e da árvore do projeto. PR #1 continua em Draft.

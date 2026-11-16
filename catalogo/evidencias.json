@@ -1,0 +1,111 @@
+{
+  "versao": "0.1.0-rc.2",
+  "atualizado_em": "2026-11-16",
+  "politica": "Evidência de mesma estrutura não valida o enunciado literalmente. Nenhuma das oito aulas teve todas as frases exatas revisadas; não promover.",
+  "classificacao": [
+    "confirmado-no-conteudo",
+    "tema-relacionado"
+  ],
+  "revisao_exata_pendente": true,
+  "entries": [
+    {
+      "id": "EV-INGLES-PST-002-1",
+      "idioma": "ingles",
+      "case_id": "PST-002",
+      "titulo": "British Council, vídeo A1 'At the shop'",
+      "url": "https://learnenglishteens.britishcouncil.org/skills/speaking/a1-speaking/shop?page=1",
+      "grau": "confirmado-no-conteudo",
+      "observacao": "O roteiro possui 'do you have a bottle of water?', exemplo direto da estrutura 'do you have'; não contém a frase da caneta.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-INGLES-PST-002-2",
+      "idioma": "ingles",
+      "case_id": "PST-002",
+      "titulo": "VOA, vídeo aula 6 'Where is the Gym?'",
+      "url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-6-where-is-the-gym/3225958.html",
+      "grau": "confirmado-no-conteudo",
+      "observacao": "Contém 'Where is the gym?' e indicações de lugar; confirma a estrutura, não a expressão 'stationery store'.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-INGLES-PST-006-1",
+      "idioma": "ingles",
+      "case_id": "PST-006",
+      "titulo": "VOA, vídeo aula 6 'Where is the Gym?'",
+      "url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-6-where-is-the-gym/3225958.html",
+      "grau": "tema-relacionado",
+      "observacao": "Aula de orientação/localização, não de emergência/hospital; requer fonte médica e revisão de frase exata.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-ALEMAO-PST-002-1",
+      "idioma": "alemao",
+      "case_id": "PST-002",
+      "titulo": "Goethe-Institut Brasil, nível elementar A1/A2",
+      "url": "https://www.goethe.de/ins/br/pt/spr/ueb/ele.html",
+      "grau": "tema-relacionado",
+      "observacao": "O portal documenta exercícios gratuitos de compras e orientação na rua; não confirma as quatro frases completas.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-ALEMAO-PST-006-1",
+      "idioma": "alemao",
+      "case_id": "PST-006",
+      "titulo": "Goethe-Institut Brasil, vida e cotidiano",
+      "url": "https://www.goethe.de/ins/br/pt/spr/ueb/lua.html",
+      "grau": "tema-relacionado",
+      "observacao": "Tem histórias e exercícios sobre consulta médica, mas não é protocolo de emergência nem confirmação das frases exatas.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-FRANCES-PST-002-1",
+      "idioma": "frances",
+      "case_id": "PST-002",
+      "titulo": "TV5MONDE, Première classe, início em francês",
+      "url": "https://apprendre.tv5monde.com/fr/exercices/premiere-classe",
+      "grau": "tema-relacionado",
+      "observacao": "Módulos gratuitos em vídeo para compras e cotidiano; falta vincular cada expressão a um vídeo específico.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-FRANCES-PST-006-1",
+      "idioma": "frances",
+      "case_id": "PST-006",
+      "titulo": "TV5MONDE, vídeos curtos de pronúncia",
+      "url": "https://apprendre.tv5monde.com/fr/aides/aides-en-video",
+      "grau": "tema-relacionado",
+      "observacao": "Vídeos de pronúncia, incluindo sons nasais, mas não confirmam diretamente socorro/hospital.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-JAPONES-PST-002-1",
+      "idioma": "japones",
+      "case_id": "PST-002",
+      "titulo": "Japan Foundation Irodori, áudio da lição 10",
+      "url": "https://www.irodori.jpf.go.jp/en/starter/audio/lesson10.html",
+      "grau": "confirmado-no-conteudo",
+      "observacao": "Lição 'Please lend me the stapler', com áudio sobre pedir objeto emprestado; não é prova literal da frase com caneta.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    },
+    {
+      "id": "EV-JAPONES-PST-006-1",
+      "idioma": "japones",
+      "case_id": "PST-006",
+      "titulo": "Japan Foundation Irodori, áudio da lição 2",
+      "url": "https://www.irodori.jpf.go.jp/starter/audio/lesson02.html",
+      "grau": "confirmado-no-conteudo",
+      "observacao": "Lição 'すみません、よくわかりません' sobre não compreender; não valida sozinho pedidos de ambulância.",
+      "confirmacao_frase_exata": false,
+      "checado_em": "2026-11-16"
+    }
+  ]
+}

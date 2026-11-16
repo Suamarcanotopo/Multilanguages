@@ -13,6 +13,21 @@ cases=load("catalogo/casos.json")["casos"]
 langs=load("catalogo/idiomas.json")["idiomas"]
 sources=load("catalogo/fontes.json")["fontes"]
 stores=load("catalogo/lojas.json")["lojas"]
+evidence=load("catalogo/evidencias.json")["entries"]
+unique([e["id"] for e in evidence],"evidence")
+assert len(evidence)>=8, "Faltam evidências por aula"
+for e in evidence:
+    if e["case_id"] not in {"PST-002","PST-006"} or e["idioma"] not in {l["slug"] for l in langs}:
+        ERRORS.append(f"evidência órfã: {e['id']}")
+    if not e["url"].startswith("https://"):
+        ERRORS.append(f"URL evidência inválida: {e['id']}")
+    if e["confirmacao_frase_exata"] is not False:
+        ERRORS.append(f"Falsa homologação de frase: {e['id']}")
+for l in langs:
+    for case_id in {"PST-002","PST-006"}:
+        if not any(e["idioma"]==l["slug"] and e["case_id"]==case_id for e in evidence):
+            ERRORS.append(f"Sem evidência de estudo: {l['slug']}/{case_id}")
+
 def unique(items,label):
     if len(items)!=len(set(items)):
         ERRORS.append(f"ID duplicado: {label}")
